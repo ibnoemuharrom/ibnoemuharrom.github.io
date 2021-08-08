@@ -1,0 +1,29 @@
+body {
+	background-size: cover;
+	max-height: 750px;
+}
+
+.text-name {
+	color: #2541B2;
+	font-family: 'Acme', sans-serif;
+}
+
+.icon-link {
+	color: black;
+}
+
+.icon-link:hover {
+	color: #2541B2;
+}
+
+.paragraf {
+	font-family: 'Roboto', sans-serif;
+}
+
+#content {
+	padding-top: 10rem;
+}
+
+#footer {
+	padding-top: 1rem;
+}
