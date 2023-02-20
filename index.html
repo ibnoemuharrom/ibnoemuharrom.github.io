@@ -10,6 +10,7 @@
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- AOS -->
@@ -21,19 +22,24 @@
     <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16" />
 
-    <title>Ibnudev | Junior Webdev</title>
+    <title>Ibnudev | Webdev</title>
   </head>
-  <body style="">
+  <body>
+
+    <div class="loader-bg">
+      <div class="loader"></div>
+    </div>
+
     <section id="content">
       <div class="container-fluid">
           <div class="row justify-content-center text-center">
             <div class="col-md-6">
-              <img src="img/logo.png" alt="logo" class="img-fluid mb-4" width="50" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1500">
-              <h2 class="fw-bold" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1500">Hi, I'm <span class="text-name">Ibnoemuharrom.</span> <span>&#128075;</span></h2>
-              <h4 class="paragraf" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1500">
+              <img src="img/img.png" alt="logo" class="img-fluid mb-2" width="120" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1500">
+              <h2 class="fw-bold" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1500">Hi, I'm <span class="text-name">Ibnoemuharrom.</span> <span class="wave">&#128075;&#127996;</span></h2>
+              <h5 class="paragraf" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1500">
                 "Im an indonesian web developer, I am very interested in web programming.
                 I like to implement and share what I already know, so that it can be useful."
-              </h4>
+              </h5>
             </div>
           </div>
       </div>
@@ -44,11 +50,11 @@
         <div class="row text-center">
           <div class="col">
             <p>
-              <a href="https://www.linkedin.com/in/ibnu-muharrom" target="_blank" class="icon-link"><i class="bi bi-linkedin lead"></i></a>
+              <a  href="https://www.linkedin.com/in/ibnu-muharrom" target="_blank" class="icon-link"><i class="bi bi-linkedin lead"></i></a>
               <a href="https://www.instagram.com/ibnumuharrom_" target="_blank" class="icon-link"><i class="bi bi-instagram p-3 lead"></i></a>
               <a href="https://api.whatsapp.com/send?phone=+6285523602558" target="_blank" class="icon-link"><i class="bi bi-whatsapp lead"></i></a>
               <a href="mailto:ibnoemuharrom@gmail.com" target="_blank" class="icon-link"><i class="bi bi-google p-3 lead"></i></a>
-              <a href="https://www.youtube.com/channel/UC6tftlYkOhdKQQQWIJp8CTA" target="_blank" class="icon-link"><i class="bi bi-youtube lead"></i></a>
+              <a href="https://www.youtube.com/@ibnudev" target="_blank" class="icon-link"><i class="bi bi-youtube lead"></i></a>
             </p>
           </div>
         </div>
@@ -67,6 +73,13 @@
     <script>
       AOS.init();
     </script>
-    
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      setTimeout(function() {
+        $('.loader-bg').fadeToggle();
+      }, 2000);
+    </script>
   </body>
 </html>
