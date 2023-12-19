@@ -18,6 +18,9 @@
     <!-- mycss -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- kursor -->
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
     <!-- icon -->
     <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16" />
@@ -26,10 +29,23 @@
   </head>
   <body>
 
+    <!-- loader -->
     <div class="loader-bg">
       <div class="loader"></div>
     </div>
+    <!-- end loader -->
 
+    <!-- navbar -->
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">
+          <img src="img/logo.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+        </a>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- content -->
     <section id="content">
       <div class="container-fluid">
           <div class="row justify-content-center text-center">
@@ -44,6 +60,7 @@
           </div>
       </div>
     </section>
+    <!-- end content -->
 
     <footer id="footer">
       <div class="container">
@@ -61,8 +78,6 @@
       </div>
     </footer>
 
-    <div class="cursor"></div>
-
 
     <!-- Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
@@ -72,6 +87,17 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <!-- kursor -->
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+        new kursor({
+            type: 1,
+            removeDefaultCursor: true,
+            color: "#2541B2"
+        })
     </script>
 
     <!-- Jquery -->

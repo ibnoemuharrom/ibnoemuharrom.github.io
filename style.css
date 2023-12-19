@@ -1,6 +1,7 @@
 body {
 	background-size: cover;
-	max-height: 750px;
+	max-height: 100%;
+	max-width: 100%;
 }
 
 
